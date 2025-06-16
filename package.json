@@ -1,0 +1,26 @@
+{
+  "name": "calendario",
+  "version": "1.0.0",
+  "description": "aplicativo usando node js, electron js, javascript",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoMeirelles1/Calendario.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoMeirelles1/Calendario/issues"
+  },
+  "homepage": "https://github.com/MarcoMeirelles1/Calendario#readme",
+  "devDependencies": {
+    "electron": "^36.4.0"
+  },
+  "dependencies": {
+    "tsparticles": "^3.8.1"
+  }
+}

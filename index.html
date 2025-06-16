@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codigo roxo - clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="src/images/novalogoMarcao.png"
+     alt="Logo-Marcao" class="logo_marcao">
+    <div class="container">
+        <div id="clock">Carregando...</div>
+        <div id="day">Carregando...</div>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.37.6/tsparticles.min.js"></script>
+    <script>
+        tsParticles.load("particles-js",{
+            particles:{
+                number:{
+                   value: 50,
+                },
+                color: {
+                    value: "#ca00e0"
+                },
+                shape:{
+                    type: "circle"
+                },
+                opacity:{
+                    value: 0.2,
+                    random: true,
+                },
+                size:{
+                    value:3,
+                },
+                links:{
+                    enable:true,
+                    distance: 150,
+                    color: "28013d",
+                    opacity: 0.5,
+                    width: 1,
+                },
+                move:{
+                    enable: true,
+                    speed: 2,
+                    direction: "none",
+                    outMode: "bounce",
+                    
+                }
+
+            }
+        })
+
+
+
+
+
+        setInterval(() => {
+            const now = new Date();
+            document.getElementById('clock').innerHTML = now.
+            toLocaleTimeString();
+            document.getElementById('day').innerHTML = now.
+            toLocaleDateString();
+
+
+        },1000);
+    </script>
+
+</body>
+
+</html>

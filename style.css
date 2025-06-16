@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    color: rgb(117,117,117);
+    background-color: rgb(16,16,16);
+    -webkit-app-region: drag;
+    
+}
+
+#clock{
+    color: rgba(255,20,255);
+    font-size: 100px;
+    text-shadow: purple 0 0 30px;
+
+}
+#day {
+     color: rgba(255,20,255);
+    font-size: 20px;
+    text-shadow: purple 0 0 30px;
+}
+
+#particles-js{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_marcao{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 20%;
+}
